@@ -8,7 +8,7 @@
     </head>
     <body>
         <section class="calc">
-            <div class="calc__data">
+            <form class="calc__data">
                 <label for="bill" class="label-gen"
                     >Bill<input
                         type="number"
@@ -55,21 +55,21 @@
                             <input
                                 type="radio"
                                 name="tips"
-                                id="tip25"
+                                id="tip20"
                                 class="tip-radio"
-                                data-tip="25"
+                                data-tip="20"
                             />
-                            <label for="tip25" class="tip-label">25%</label>
+                            <label for="tip20" class="tip-label">20%</label>
                         </div>
                         <div class="radiobox">
                             <input
                                 type="radio"
                                 name="tips"
-                                id="tip50"
+                                id="tip25"
                                 class="tip-radio"
-                                data-tip="50"
+                                data-tip="25"
                             />
-                            <label for="tip50" class="tip-label">50%</label>
+                            <label for="tip25" class="tip-label">25%</label>
                         </div>
                         <div class="radiobox">
                             <input
@@ -102,7 +102,8 @@
                         required
                         placeholder="0"
                 /></label>
-            </div>
+            </form>
+
             <div class="calc__display">
                 <label for="" class="label-display"
                     >Tip Amount <span>/ person</span></label

@@ -200,6 +200,14 @@ input[type="number"]:valid {
     border-radius: 0.5rem;
     font-size: 1.7rem;
     letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.reset:hover {
+    filter: brightness(80%);
+}
+.reset:active {
+    filter: brightness(120%);
 }
 
 /* ++++++++++ MEDIA QUERIES */

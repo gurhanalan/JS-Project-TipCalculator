@@ -1,7 +1,7 @@
 "use strict";
 
 // +++++ Variables
-
+const form = document.querySelector(".calc__data");
 const billAmount = document.querySelector(".bill-amount");
 const numOfPeople = document.querySelector(".num-of-people");
 
@@ -12,6 +12,7 @@ const displayTip = document.querySelector(".tip-display");
 const displayTotal = document.querySelector(".total-display");
 
 const btnReset = document.querySelector(".reset");
+
 // Global variables
 
 let total = 0;
@@ -20,6 +21,7 @@ let tip = 0;
 
 let totalPerPerson = 0;
 let tipPerPerson = 0;
+
 // FUNCTIONS
 function display(total, tip) {
     displayTotal.innerHTML = total.toLocaleString("en-US", {
@@ -44,18 +46,20 @@ function calcTip() {
     if (tip === "custom") {
         tip = customTip.value;
     }
-    console.log(total, people, tip);
 
-    tipPerPerson = (total * Number(tip)) / (100 * people);
+    if (total && people && tip) {
+        tipPerPerson = (total * Number(tip)) / (100 * people);
 
-    totalPerPerson = tipPerPerson + total / people;
+        totalPerPerson = tipPerPerson + total / people;
 
-    display(totalPerPerson, tipPerPerson);
+        display(totalPerPerson, tipPerPerson);
+    }
 }
-
-display(124.566, 15);
 
 // EVENT LISTENERS
 btnReset.addEventListener("click", () => {
-    calcTip();
+    form.reset();
+    display(0, 0);
 });
+
+form.addEventListener("change", calcTip);
