@@ -30,9 +30,11 @@ body {
     background-color: var(--color3);
 }
 
+/* ++++++++++++++++++++ Layout */
 .calc {
     display: flex;
     padding: 3rem;
+    gap: 3rem;
     border-radius: 3rem;
     background-color: white;
 }
@@ -44,6 +46,7 @@ body {
     /* padding: 2rem; */
 }
 
+/* ++++++++++++++++++++++++ Calc Data Section */
 .label-gen {
     display: flex;
     flex-direction: column;
@@ -144,4 +147,47 @@ input[type="number"]:valid {
     height: 100%;
     padding: 1rem;
     border: 2px solid var(--color2);
+}
+
+/* ++++++++++++ Calc Display Section */
+.calc__display {
+    background-color: var(--color1);
+    padding: 4rem 3rem;
+    border-radius: 3rem;
+
+    display: grid;
+    grid-template-columns: 20rem min-content;
+}
+
+.label-display {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.label-display span {
+    color: var(--color3);
+}
+
+.tip-display,
+.total-display {
+    color: var(--color2);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.tip-display::before,
+.total-display::before {
+    content: "$";
+}
+
+.reset {
+    background-color: var(--color2);
+    color: white;
+    border: none;
+    padding: 1rem;
+    grid-column: 1 / span 2;
+    align-self: end;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
 }
