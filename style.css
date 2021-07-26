@@ -161,7 +161,7 @@ input[type="number"]:valid {
     border-radius: 3rem;
 
     display: grid;
-    grid-template-columns: 20rem min-content;
+    grid-template-columns: max-content 20rem;
     row-gap: 2rem;
 
     align-items: center;
@@ -181,6 +181,7 @@ input[type="number"]:valid {
     color: var(--color2);
     font-size: 4rem;
     font-weight: 400;
+    text-align: right;
     /* align-self: center; */
 }
 
