@@ -9,90 +9,99 @@
     <body>
         <section class="calc">
             <div class="calc__data">
-                <form action="">
-                    <label for="bill" class="label-gen"
-                        >Bill<input
-                            type="number"
-                            name="bill"
-                            id=""
-                            class="bill-amount"
-                    /></label>
-                    <label for="radio" class="label-gen"
-                        >Select Tip %
-                        <div class="radioboxes" name="radio">
-                            <div class="radiobox">
-                                <input
-                                    type="radio"
-                                    name="tips"
-                                    id="tip5"
-                                    class="tip-radio"
-                                    data-tip="5"
-                                />
-                                <label for="tip5" class="tip-label">5%</label>
-                            </div>
-                            <div class="radiobox">
-                                <input
-                                    type="radio"
-                                    name="tips"
-                                    id="tip10"
-                                    class="tip-radio"
-                                    data-tip="10"
-                                />
-                                <label for="tip10" class="tip-label">10%</label>
-                            </div>
-                            <div class="radiobox">
-                                <input
-                                    type="radio"
-                                    name="tips"
-                                    id="tip15"
-                                    class="tip-radio"
-                                    data-tip="15"
-                                />
-                                <label for="tip15" class="tip-label">15%</label>
-                            </div>
-                            <div class="radiobox">
-                                <input
-                                    type="radio"
-                                    name="tips"
-                                    id="tip25"
-                                    class="tip-radio"
-                                    data-tip="25"
-                                />
-                                <label for="tip25" class="tip-label">25%</label>
-                            </div>
-                            <div class="radiobox">
-                                <input
-                                    type="radio"
-                                    name="tips"
-                                    id="tip50"
-                                    class="tip-radio"
-                                    data-tip="50"
-                                />
-                                <label for="tip50" class="tip-label">50%</label>
-                            </div>
-                            <div class="radiobox">
-                                <input
-                                    type="radio"
-                                    name="tips"
-                                    id="tipcustom"
-                                    class="tip-radio"
-                                    data-tip="50"
-                                />
-                                <label
-                                    for="tipcustom"
-                                    class="tip-label tip-custom-label"
-                                    >Custom</label
-                                >
-                                <input
-                                    type="number"
-                                    name=""
-                                    id=""
-                                    class="tip-custom-number"
-                                />
-                            </div>
+                <label for="bill" class="label-gen"
+                    >Bill<input
+                        type="number"
+                        name="bill"
+                        id=""
+                        class="bill-amount"
+                        required
+                        placeholder="0"
+                /></label>
+                <label for="radio" class="label-gen"
+                    >Select Tip %
+                    <div class="radioboxes" name="radio">
+                        <div class="radiobox">
+                            <input
+                                type="radio"
+                                name="tips"
+                                id="tip5"
+                                class="tip-radio"
+                                data-tip="5"
+                            />
+                            <label for="tip5" class="tip-label">5%</label>
                         </div>
-                    </label>
-                </form>
+                        <div class="radiobox">
+                            <input
+                                type="radio"
+                                name="tips"
+                                id="tip10"
+                                class="tip-radio"
+                                data-tip="10"
+                            />
+                            <label for="tip10" class="tip-label">10%</label>
+                        </div>
+                        <div class="radiobox">
+                            <input
+                                type="radio"
+                                name="tips"
+                                id="tip15"
+                                class="tip-radio"
+                                data-tip="15"
+                            />
+                            <label for="tip15" class="tip-label">15%</label>
+                        </div>
+                        <div class="radiobox">
+                            <input
+                                type="radio"
+                                name="tips"
+                                id="tip25"
+                                class="tip-radio"
+                                data-tip="25"
+                            />
+                            <label for="tip25" class="tip-label">25%</label>
+                        </div>
+                        <div class="radiobox">
+                            <input
+                                type="radio"
+                                name="tips"
+                                id="tip50"
+                                class="tip-radio"
+                                data-tip="50"
+                            />
+                            <label for="tip50" class="tip-label">50%</label>
+                        </div>
+                        <div class="radiobox">
+                            <input
+                                type="radio"
+                                name="tips"
+                                id="tipcustom"
+                                class="tip-radio"
+                                data-tip="50"
+                            />
+                            <label
+                                for="tipcustom"
+                                class="tip-label tip-custom-label"
+                                >Custom</label
+                            >
+                            <input
+                                type="number"
+                                name=""
+                                id=""
+                                class="tip-custom-number"
+                            />
+                        </div>
+                    </div>
+                </label>
+                <label for="num-of-people" class="label-gen"
+                    >Number of People<input
+                        type="number"
+                        name="num-of-people"
+                        id=""
+                        class="num-of-people"
+                        required
+                        placeholder="0"
+                /></label>
             </div>
             <div class="calc__display"></div>
         </section>
