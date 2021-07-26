@@ -33,6 +33,7 @@ body {
 /* ++++++++++++++++++++ Layout */
 .calc {
     display: flex;
+
     padding: 3rem;
     gap: 3rem;
     border-radius: 3rem;
@@ -60,7 +61,7 @@ body {
 .num-of-people {
     text-align: right;
     position: relative;
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
 
     padding: 1rem 1rem 1rem 3rem;
     /* padding-left: 30px; */
@@ -84,6 +85,9 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
     border: 2px solid var(--color1);
     border-radius: 0.5rem;
+    font-weight: 600;
+    color: var(--color1);
+    font-size: 1.6rem;
 }
 input[type="number"]:focus,
 input[type="number"]:valid {
@@ -120,6 +124,7 @@ input[type="number"]:valid {
 .radioboxes {
     display: grid;
     grid-template-columns: repeat(3, min-content);
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -157,6 +162,9 @@ input[type="number"]:valid {
 
     display: grid;
     grid-template-columns: 20rem min-content;
+    row-gap: 2rem;
+
+    align-items: center;
 }
 
 .label-display {
@@ -171,8 +179,9 @@ input[type="number"]:valid {
 .tip-display,
 .total-display {
     color: var(--color2);
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 400;
+    /* align-self: center; */
 }
 
 .tip-display::before,
@@ -190,4 +199,17 @@ input[type="number"]:valid {
     border-radius: 0.5rem;
     font-size: 1.7rem;
     letter-spacing: 2px;
+}
+
+/* ++++++++++ MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .calc {
+        flex-direction: column;
+    }
 }
