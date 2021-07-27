@@ -4,12 +4,14 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ## Table of contents
 
--   [Overview](#overview)
-    -   [The challenge](#the-challenge)
-    -   [Screenshot](#screenshot)
-    -   [Links](#links)
--   [My process](#my-process)
-    -   [Built with](#built-with)
+- [Frontend Mentor - Tip calculator app solution](#frontend-mentor---tip-calculator-app-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
 
 ## Overview
 
@@ -27,7 +29,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Live Website](https://your-solution-url.com)
+-   Solution URL: [Live Website](https://gurhanalan.github.io/JS-Project-TipCalculator/)
 
 ## My process
 
